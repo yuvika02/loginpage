@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="etName" type="id">et</item>
+    <item name="etPassword" type="id">et</item>
+    <item name="tvForgotPassword" type="id">tv</item>
+    <item name="btnLogin" type="id">btn</item>
+    <item name="rbShe" type="id" />
+</resources>

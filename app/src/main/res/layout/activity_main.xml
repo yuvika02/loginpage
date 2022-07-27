@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<layout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<ScrollView
+  android:layout_width="match_parent"
+   android:layout_height="match_parent" >
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
@@ -65,37 +70,32 @@
         android:text="login"
 
         android:textSize="22sp" />
-</LinearLayout>
- <RadioGroup
-android:id="@+id/rgGender"
-android:layout_height="wrap_content"
-android:layout_width="match_parent"
-android:orientation="horizontal">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rgGender"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbShe"
+            android:layout_width="153dp"
+            android:layout_height="54dp"
+            android:text="@string/She"
+            android:weight="2" />
 <RadioButton
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:id="@+id/rbHe"
-    android:layout_weight="1"
-    android:text="@string/he"/>
+android:layout_width="Wrap_content"
+android:layout_height="Wrap_content"
+android:id="@+id/rbHe"
+android:weight="2"
+android:text="@string/He"/>
 <RadioButton
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:id="@+id/rbShe"
-    android:layout_weight="1"
-    android:text="@string/she"/>
-<RadioButton
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:id="@+id/rbOther"
-    android:layout_weight="1"
+    android:layout_width="Wrap_content"
+    android:layout_height="Wrap_content"
+    android:id="@+id/rbOthers"
+    android:weight="2"
     android:text="@string/others"/>
-</RadioGroup>
-<EditText
-android:hint="@string/enter_gender"
-android:id="@+id/etOtherName"
-android:layout_height="wrap_content"
-android:layout_width="match_parent"
-android:visibility="visible" />
-
-
-
+    </RadioGroup>
+</LinearLayout>
+</ScrollView>
+</layout>

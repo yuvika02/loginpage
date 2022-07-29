@@ -9,7 +9,7 @@ import android.view.inputmethod.InputBinding
 import android.widget.*
 import androidx.core.widget.doOnTextChanged
 class MainActivity : AppCompatActivity() {
-    lateinit var binding:BindingMainActivity
+    lateinit var binding: ActivityMainBinding
     lateinit var etName: EditText
     lateinit var etPassword: EditText
     lateinit var tvForgotPassword: TextView
